@@ -1,20 +1,50 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Swag Lab Automation Project
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Objetivo
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+El objetivo de este plan es garantizar que la aplicación Swag Lab funcione correctamente en todos los navegadores y tamaños de pantalla, enfocándose en la experiencia del usuario en dispositivos móviles (65%) y de escritorio (35%). Se cubrirán las funcionalidades críticas de login, interfaz de catálogo, carrito de compras y checkout: overview.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Estructura del Proyecto
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+El proyecto está estructurado de la siguiente manera:
+
+- `src/main/java`: Contiene el código fuente principal.
+- `src/test/java`: Contiene las pruebas automatizadas.
+- `resources/features`: Contiene los archivos de características de Cucumber.
+
+## Funcionalidades Críticas
+
+### Login
+
+- Pruebas de login exitoso y fallido.
+- Validación de mensajes de error y éxito.
+
+### Interfaz de Catálogo
+
+- Navegación y visualización de productos.
+- Validación de la correcta visualización de los productos.
+
+### Carrito de Compras
+
+- Adición y remoción de productos del carrito.
+- Validación de la correcta actualización del carrito.
+
+### Checkout: Overview
+
+- Proceso de checkout.
+- Validación de la correcta finalización de la compra.
+
+## Tecnologías Utilizadas
+
+- **Java**: Lenguaje de programación principal.
+- **Gradle**: Herramienta de automatización de construcción.
+- **Appium**: Herramienta de automatización de pruebas.
+- **Serenity BDD**: Framework para pruebas automatizadas.
+- **Cucumber**: Framework para pruebas basadas en comportamiento (BDD).
+
+## Ejecución de Pruebas
+
+Para ejecutar las pruebas, utiliza el siguiente comando:
+
+```sh
+gradle clean test
